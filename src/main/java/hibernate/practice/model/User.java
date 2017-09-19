@@ -22,17 +22,15 @@ public class User {
 
 	@Id
 	private int userId;
-	
+
 	@Column(name = "FIRSTNAME")
 	private String firstName;
-	
+
 	@Column(name = "LASTNAME")
 	private String lastName;
-	
-	@Column(name = "ADDRESS")
+
 	private String address;
-	
-	@Column(name = "CITY")
+
 	private String city;
 
 	public int getUserId() {
@@ -59,6 +57,7 @@ public class User {
 		this.lastName = lastName;
 	}
 
+	@Column(name = "ADDRESS")
 	public String getAddress() {
 		return address;
 	}
@@ -67,6 +66,7 @@ public class User {
 		this.address = address;
 	}
 
+	@Column(name = "CITY")
 	public String getCity() {
 		return city;
 	}
