@@ -19,9 +19,9 @@ public class CURDOperations {
 	public boolean saveUser(User user) {
 		Session session = GenerateHibernateSessionFactory.getSessionFactory();
 		boolean flag = false;
-		
+
 		session.beginTransaction();
-		{
+		if (null != user) {
 			session.save(user);
 			flag = true;
 		}
