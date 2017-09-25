@@ -15,6 +15,6 @@
 		<property name="connection.pool_size">1</property>
 		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
 		<property name="hbm2ddl.auto">update</property>
-		<mapping class="hibernate.practice.model.User"></mapping>
+		<mapping class="hibernate.practice.model.Employee"></mapping>
 	</session-factory>
 </hibernate-configuration>
